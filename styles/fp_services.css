@@ -1,0 +1,104 @@
+@charset "uft-8";
+
+main {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+}
+
+h3 {
+	font-size: 1.75em;
+	text-align: center;
+	margin: 20px auto;
+}
+
+section ol {
+	background-color: #94618e;
+	padding: 10px 30px;
+	border: 2px solid;
+	border-radius: 5px;
+	margin-bottom: 20px;
+	box-shadow: 0px 2px 5px 1px rgb(20, 20, 20);
+}
+
+section ol li a {
+	color: black;
+	font-family: "Lato";
+	text-decoration: none;
+}
+
+section ol li a:hover {
+	color: #f4decb;
+}
+
+section#services-and-pricing {
+	display: flex;
+	flex-direction: column;
+}
+
+section ol li {
+	font-size: 1.25em;
+}
+
+th, td.subheader {
+	font-size: 1.25em;
+	border: 2px solid rgb(20,20,20);
+	background-color: #94618e;
+	padding: 5px;
+	width: 120px;
+} 
+
+td {
+	border: 2px solid rgb(20,20,20);
+	padding: 5px;
+	background: linear-gradient(160deg, #f4decb, #94618e);
+}
+
+table {
+	border: 2px solid rgb(20,20,20);
+	margin-bottom: 20px;
+	border-collapse: collapse;
+	box-shadow: 0px 2px 5px 1px rgb(20, 20, 20);
+}
+
+button {
+	background:linear-gradient(#94618e, #49274a);
+	border: 2px solid rgb(20,20,20);
+	font-size: 2.5em;
+	margin: 20px auto;
+	padding: 0px 20px;
+}
+
+button a {
+	color: rgb(20,20,20);
+	font-family: "Lato";
+	text-decoration: none;
+}
+button a:hover {
+	color: #f4decb;
+}
+
+footer {
+	margin-top: 50px;
+}
+
+@media (max-width: 420px) {
+	th {
+	font-size: .75em;
+	border: 2px solid rgb(20,20,20);
+	background-color: #94618e;
+	padding: 5px;
+	width: 120px;
+	} 
+
+	td {
+		font-size: .75em;
+		border: 2px solid rgb(20,20,20);
+		padding: 5px;
+		background: linear-gradient(160deg, #f4decb, #94618e);
+	}
+	
+	section ol li {
+	font-size: 1em;
+}
+}

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+	<!-- 
+	Author: Em McGuire
+	Date: 12/10/22
+	File Name: fp_contact.html
+	Description: Includes contact info/links and a contact form for A&J Pet Care
+	-->
+	<head>
+		<title>Contact A&amp;J</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="keywords" content="Pet, Pet Care, Dog, Cat, Small Animal">
+		<meta name="description" content="Contact A&J Pet Care to help keep your pet safe and happy while you're away!">
+		<link href="styles/base.css" rel="stylesheet" media="all">
+		<link href="styles/fp_contact.css" rel="stylesheet" media="all">
+		<link href="styles/fp_print.css" rel="stylesheet" media="print">
+	</head>
+	<body>
+		<header>
+			<nav id="nav-bar">
+				<ul>
+					<li><a href="fp_index.html">Home</a></li>
+					<li><a href="fp_about.html">About Us</a></li>
+					<li><a href="fp_services.html">Services</a></li>
+					<li><a href="fp_faq.html">FAQ</a></li>
+					<li><a href="fp_contact.html">Contact Us</a></li>
+				</ul>
+			</nav>
+			<h1>A&amp;J</h1>
+			<h2>Pet Sitting</h2>
+		</header>
+		
+		<main>
+			<section id="contact-info">
+				<h2>Get in touch</h2>
+				<div id="contact-and-areas">
+					<div id="phone">
+						<a href="tel:1234567891"><img src="content/phone.png" alt="phone icon"></a>
+						<p><a href="tel:1234567891">(123)456-7891</a></p>
+					</div>
+					<div id="email">
+						<a href="mailto:example@example.com?Subject=Pet%20Care"><img src="content/mail.png" alt="email icon"></a>
+						<p><a href="mailto:example@example.com?Subject=Pet%20Care">example@example.com</a></p>
+					</div>
+				</div>
+			
+				<div id="contact-form">
+					<form>
+						<div class="form-row">
+							<label for="nameBox">Name</label>
+							<input type="text" id="nameBox" name="name" placeholder="First Last" required>
+						</div>
+
+						<div class="form-row">
+							<label for="emailBox">Email</label>
+							<input type="email" id="emailBox" name="email" placeholder="example@example.com" required>
+						</div>
+
+						<div class="form-row">
+							<label for="phoneBox">Phone</label>
+							<input type="tel" id="phoneBox" name="phone" placeholder="nnn-nnn-nnnn" pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$">
+						</div>
+
+						<div class="form-row">
+							<label>Type of Pet:</label>
+							<fieldset class="type">
+								<input name="petType" id="dog" value="dog" type="radio">
+								<label for="dog">Dog</label>
+								<input name="petType" id="cat" value="cat" type="radio">
+								<label for="cat">Cat</label>
+								<input name="petType" id="both" value="both" type="radio">
+								<label for="both">Both</label>
+								<input name="petType" id="other" value="other" type="radio">
+								<label for="other">Other</label>
+							</fieldset>
+						</div>
+
+						<div class="form-row">
+							<label for="care-type">Type of Care</label>
+							<select id="care-type" name="care">
+								<option value="overnight">Overnight</option>
+								<option value="drop-in">Drop In</option>
+								<option value="walk">Walk</option>
+								<option value="other">Other</option>
+							</select>
+						</div>
+
+						<div class="form-row">
+							<label for="startDate">Start Date</label>
+							<input name="startDate" id="startDate" type="date">
+						</div>
+
+						<div class="form-row">
+							<label for="endDate">End Date</label>
+							<input name="endDate" id="endDate" type="date">
+						</div>
+
+						<div class="form-row">
+							<label for="message">Message</label>
+							<textarea id="message" name="message" placeholder="Tell us a little more" style="height:100px">
+							</textarea>
+						</div>
+
+						<div class="form-row">
+							<input id="submit" type="submit" value="submit">
+						</div>
+					</form>
+				</div>
+			</section>
+			
+		</main>
+		
+		<footer>
+			<p>Em McGuire &copy; 2022</p>
+			<audio controls>
+				<source src="content/mountain-path.mp3" type="audio/mpeg">
+				Your browser does not support this audio element.
+			</audio>
+		</footer>
+	</body>
+</html> 

@@ -1,0 +1,56 @@
+@charset "utf-8";
+
+section {
+	text-align: center;
+}
+
+section dl {
+	background-color: #94618e;
+	width: 90%;
+	margin: 20px auto;
+	border: solid 3px rgb(20,20,20);
+	border-radius: 5px;
+	box-shadow: 0px 2px 5px 1px rgb(20, 20, 20);
+}
+
+section h2 {
+	font-size: 2.5em;
+	text-shadow: -1px 1px 2px rgb(20,20,20);
+}
+
+dt {
+	font-size: 1.75em;
+}
+
+dd {
+	font-size: 1.25em;
+}
+
+section#button-section h4 {
+	font-size: 1.25em;
+}
+
+@media (max-width: 420px) {
+	
+	main {
+		min-width: 100%;
+	}
+	
+	section dl {
+		min-width: 100%;
+	}
+	
+	section h2 {
+		font-size: 1.5em;
+	}
+	
+	dt {
+		font-size: 1.25em;
+		padding: 5px;
+	}
+	
+	dd {
+		font-size: 1em;
+		padding: 5px;
+	}
+}
